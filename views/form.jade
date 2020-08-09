@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  form(method='POST', action='/new')
+    h3= 'Form Header'
+    br
+    label(for='authorName')= 'Name:'
+    br
+    input(name='authorName')
+    br
+    label(for='messageText')= 'Message:'
+    br
+    input(name='messageText')
+    br
+    button(type='submit', name='submit')= 'Submit'

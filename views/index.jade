@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  each val in messages
+    ul(class='classname') 
+    li= val.text
+    li= val.user
+    li= val.added
